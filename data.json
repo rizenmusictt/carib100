@@ -2,85 +2,274 @@
     "charts": {
         "soca": [
             {
+                "id": "6dwdFeP6T48",
+                "title": "Lady Lava - High Beam (Soundboy Ryan Remix) 2026 Dancehall",
+                "channel": "Soundboy Ryan Music",
+                "url": "https://www.youtube.com/watch?v=6dwdFeP6T48",
+                "thumbnail": "https://i.ytimg.com/vi/6dwdFeP6T48/hqdefault.jpg",
+                "lifetime_views": 929974,
+                "weekly_views": 929974
+            },
+            {
+                "id": "-39f7p6I_wQ",
+                "title": "LADY LAVA  (HIGH BEAM) X STRONGY1996 X ISICIREAM  [OFFICIAL AUDIO] ZESS 2026\ud83e\udd75\ud83e\udd76\ud83e\udd2a\ud83d\udd25# I.G (STRONGY1996) ",
+                "channel": "Trinidadissomthingelse",
+                "url": "https://www.youtube.com/watch?v=-39f7p6I_wQ",
+                "thumbnail": "https://i.ytimg.com/vi/-39f7p6I_wQ/hqdefault.jpg",
+                "lifetime_views": 651526,
+                "weekly_views": 651526
+            },
+            {
+                "id": "-HysfONSl6E",
+                "title": "Melissa I&#39;M Drunk And Outside",
+                "channel": "Afroplugs - Topic",
+                "url": "https://www.youtube.com/watch?v=-HysfONSl6E",
+                "thumbnail": "https://i.ytimg.com/vi/-HysfONSl6E/hqdefault.jpg",
+                "lifetime_views": 457148,
+                "weekly_views": 457148
+            },
+            {
+                "id": "EqVAi9uAUzM",
+                "title": "Skinny Fitted - Rudeboy | Vincy Soca 2026 | Rudeboy Riddim",
+                "channel": "JC Productions",
+                "url": "https://www.youtube.com/watch?v=EqVAi9uAUzM",
+                "thumbnail": "https://i.ytimg.com/vi/EqVAi9uAUzM/hqdefault.jpg",
+                "lifetime_views": 273915,
+                "weekly_views": 273915
+            },
+            {
+                "id": "oks0cvDvbaM",
+                "title": "Full Blown - Respectfully Yours (Lyrics) | Soca 2026",
+                "channel": "MusiVibe",
+                "url": "https://www.youtube.com/watch?v=oks0cvDvbaM",
+                "thumbnail": "https://i.ytimg.com/vi/oks0cvDvbaM/hqdefault.jpg",
+                "lifetime_views": 216344,
+                "weekly_views": 216344
+            },
+            {
+                "id": "EVOOp7BURcs",
+                "title": "Terra D Governor - Korra Katara [Avatar Girl] [Official Music Video] \ud83c\uddec\ud83c\udde9",
+                "channel": "Terra D Governor Official ",
+                "url": "https://www.youtube.com/watch?v=EVOOp7BURcs",
+                "thumbnail": "https://i.ytimg.com/vi/EVOOp7BURcs/hqdefault.jpg",
+                "lifetime_views": 174093,
+                "weekly_views": 174093
+            },
+            {
+                "id": "YxkAH-XWcSA",
+                "title": "Full Blown - Respectfully Yours (D Ninja Remix) | Soca 2026",
+                "channel": "D Ninja ",
+                "url": "https://www.youtube.com/watch?v=YxkAH-XWcSA",
+                "thumbnail": "https://i.ytimg.com/vi/YxkAH-XWcSA/hqdefault.jpg",
+                "lifetime_views": 134520,
+                "weekly_views": 134520
+            },
+            {
+                "id": "gqTHycgSTwc",
+                "title": "Libra - Old Bus [Two Head Snake Riddim] Kayak Mas 2026 Carriacou Soca 2026",
+                "channel": "ImmortalRecords",
+                "url": "https://www.youtube.com/watch?v=gqTHycgSTwc",
+                "thumbnail": "https://i.ytimg.com/vi/gqTHycgSTwc/hqdefault.jpg",
+                "lifetime_views": 114339,
+                "weekly_views": 114339
+            },
+            {
+                "id": "0IOaQNUnOsg",
+                "title": "Patrice Roberts - Bad So (Official Video) WYFL riddim",
+                "channel": "Patrice Roberts Music",
+                "url": "https://www.youtube.com/watch?v=0IOaQNUnOsg",
+                "thumbnail": "https://i.ytimg.com/vi/0IOaQNUnOsg/hqdefault.jpg",
+                "lifetime_views": 89870,
+                "weekly_views": 89870
+            },
+            {
+                "id": "gyxdb42AdC0",
+                "title": "Daedae, Esron Y. Spielberg - WSF (Remix)",
+                "channel": "Esron Y. Spielberg",
+                "url": "https://www.youtube.com/watch?v=gyxdb42AdC0",
+                "thumbnail": "https://i.ytimg.com/vi/gyxdb42AdC0/hqdefault.jpg",
+                "lifetime_views": 85347,
+                "weekly_views": 85347
+            },
+            {
+                "id": "7I4FpDnS0CY",
+                "title": "Loving Still - General PP [Dog Mas Riddim] Grenada soca 2026 ",
+                "channel": "Prestigebeatz473",
+                "url": "https://www.youtube.com/watch?v=7I4FpDnS0CY",
+                "thumbnail": "https://i.ytimg.com/vi/7I4FpDnS0CY/hqdefault.jpg",
+                "lifetime_views": 71650,
+                "weekly_views": 71650
+            },
+            {
+                "id": "VWSw183sRUQ",
+                "title": "Skinny Fabulous x OG Park - My Head Very Bad [Official Audio]",
+                "channel": "SkinnyFabulousVEVO",
+                "url": "https://www.youtube.com/watch?v=VWSw183sRUQ",
+                "thumbnail": "https://i.ytimg.com/vi/VWSw183sRUQ/hqdefault.jpg",
+                "lifetime_views": 71265,
+                "weekly_views": 71265
+            },
+            {
+                "id": "4Mg94bUVa5U",
+                "title": "Jagwa De Champ x Nelieux - Ching Ching (Official Audio) | Crop Over 2026",
+                "channel": "JulianspromosTV | Soca Music",
+                "url": "https://www.youtube.com/watch?v=4Mg94bUVa5U",
+                "thumbnail": "https://i.ytimg.com/vi/4Mg94bUVa5U/hqdefault.jpg",
+                "lifetime_views": 66812,
+                "weekly_views": 66812
+            },
+            {
+                "id": "KW37bWmpfNo",
+                "title": "Voltage TBG X Keltekk - Who Get Bad Overnight | Vincy Soca 2026 | Rudeboy Riddim",
+                "channel": "JC Productions",
+                "url": "https://www.youtube.com/watch?v=KW37bWmpfNo",
+                "thumbnail": "https://i.ytimg.com/vi/KW37bWmpfNo/hqdefault.jpg",
+                "lifetime_views": 62751,
+                "weekly_views": 62751
+            },
+            {
+                "id": "DxVtgNXU8RI",
+                "title": "Angie Maya - Rum Ah Come (Official Music Video) Rum Council Riddim | Vincy Soca 2026",
+                "channel": "Angie Maya",
+                "url": "https://www.youtube.com/watch?v=DxVtgNXU8RI",
+                "thumbnail": "https://i.ytimg.com/vi/DxVtgNXU8RI/hqdefault.jpg",
+                "lifetime_views": 57481,
+                "weekly_views": 57481
+            },
+            {
+                "id": "9LUb42QSKvA",
+                "title": "Bubbah473 X Soca ET -  Demonize (Official Music Video)",
+                "channel": "Bubbah473 TV & Radio",
+                "url": "https://www.youtube.com/watch?v=9LUb42QSKvA",
+                "thumbnail": "https://i.ytimg.com/vi/9LUb42QSKvA/hqdefault.jpg",
+                "lifetime_views": 56479,
+                "weekly_views": 56479
+            },
+            {
+                "id": "Pf6SXz6kjq0",
+                "title": "Voice - Cyah Behave (Kiddies Carnival Refix) | Soca 2026",
+                "channel": "JulianspromosTV | Soca Music",
+                "url": "https://www.youtube.com/watch?v=Pf6SXz6kjq0",
+                "thumbnail": "https://i.ytimg.com/vi/Pf6SXz6kjq0/hqdefault.jpg",
+                "lifetime_views": 56096,
+                "weekly_views": 56096
+            },
+            {
+                "id": "9LToICxLu6Y",
+                "title": "De Gyal Trending - @CHBeatz23 | New Soca Anthem\ud83d\udd252026 [Official Music Video] #Soca #CaribbeanMusic",
+                "channel": "Clint Fusion1",
+                "url": "https://www.youtube.com/watch?v=9LToICxLu6Y",
+                "thumbnail": "https://i.ytimg.com/vi/9LToICxLu6Y/hqdefault.jpg",
+                "lifetime_views": 54371,
+                "weekly_views": 54371
+            },
+            {
+                "id": "JboPURKgw_w",
+                "title": "Voice X Machel Montano X Bunji Garlin - Giddem woman on d Road (DJ Kai Mashup)",
+                "channel": "RealDJKai",
+                "url": "https://www.youtube.com/watch?v=JboPURKgw_w",
+                "thumbnail": "https://i.ytimg.com/vi/JboPURKgw_w/hqdefault.jpg",
+                "lifetime_views": 44653,
+                "weekly_views": 44653
+            },
+            {
+                "id": "_teHAXGs7rA",
+                "title": "Lil Natty &amp; Thunda - Headache (Official Music Video) Soca 2026 #PainKillerRiddim",
+                "channel": "Propa Way Production",
+                "url": "https://www.youtube.com/watch?v=_teHAXGs7rA",
+                "thumbnail": "https://i.ytimg.com/vi/_teHAXGs7rA/hqdefault.jpg",
+                "lifetime_views": 43717,
+                "weekly_views": 43717
+            },
+            {
+                "id": "2oK4RG94ptk",
+                "title": "OG Park - Bendin | Sin City Riddim  | vincy soca 2026",
+                "channel": "Hick D Artiste",
+                "url": "https://www.youtube.com/watch?v=2oK4RG94ptk",
+                "thumbnail": "https://i.ytimg.com/vi/2oK4RG94ptk/hqdefault.jpg",
+                "lifetime_views": 29084,
+                "weekly_views": 29084
+            },
+            {
+                "id": "hCi-N_dRytg",
+                "title": "Capital Jab x Puzzle - She Capital [Offical Music video] Soca 2026",
+                "channel": "Gatezgreenz",
+                "url": "https://www.youtube.com/watch?v=hCi-N_dRytg",
+                "thumbnail": "https://i.ytimg.com/vi/hCi-N_dRytg/hqdefault.jpg",
+                "lifetime_views": 27980,
+                "weekly_views": 27980
+            },
+            {
+                "id": "7wY9on-QyhU",
+                "title": "Imran Nerdy - Vini &quot;Official Music Video&quot; 2026 Soca",
+                "channel": "Imran Nerdy Music",
+                "url": "https://www.youtube.com/watch?v=7wY9on-QyhU",
+                "thumbnail": "https://i.ytimg.com/vi/7wY9on-QyhU/hqdefault.jpg",
+                "lifetime_views": 26019,
+                "weekly_views": 26019
+            },
+            {
+                "id": "w9hc3gCtJcY",
+                "title": "Movieman- New ball | Vincy Soca 2026",
+                "channel": "Movieman",
+                "url": "https://www.youtube.com/watch?v=w9hc3gCtJcY",
+                "thumbnail": "https://i.ytimg.com/vi/w9hc3gCtJcY/hqdefault.jpg",
+                "lifetime_views": 21860,
+                "weekly_views": 21860
+            },
+            {
+                "id": "IGTGMAEivXQ",
+                "title": "Boyzie - Ova Do It (Official Audio) 2026",
+                "channel": "Boyzie",
+                "url": "https://www.youtube.com/watch?v=IGTGMAEivXQ",
+                "thumbnail": "https://i.ytimg.com/vi/IGTGMAEivXQ/hqdefault.jpg",
+                "lifetime_views": 17589,
+                "weekly_views": 17589
+            },
+            {
+                "id": "KyTbHTKl5cA",
+                "title": "Imran Nerdy - Flavor &quot;Official Music Video&quot; 2026 Soca",
+                "channel": "Imran Nerdy Music",
+                "url": "https://www.youtube.com/watch?v=KyTbHTKl5cA",
+                "thumbnail": "https://i.ytimg.com/vi/KyTbHTKl5cA/hqdefault.jpg",
+                "lifetime_views": 14737,
+                "weekly_views": 14737
+            },
+            {
+                "id": "4XTe7kOrP_M",
+                "title": "Patrice Roberts - Drunk In Love (Sugar Mill Riddim) | Soca 2026",
+                "channel": "JulianspromosTV | Soca Music",
+                "url": "https://www.youtube.com/watch?v=4XTe7kOrP_M",
+                "thumbnail": "https://i.ytimg.com/vi/4XTe7kOrP_M/hqdefault.jpg",
+                "lifetime_views": 11256,
+                "weekly_views": 11256
+            },
+            {
+                "id": "kVdUhyC5xBE",
+                "title": "Stink and dutty has evolved into a monster fete! Trinidad carnival 2026",
+                "channel": "Bess Fete",
+                "url": "https://www.youtube.com/watch?v=kVdUhyC5xBE",
+                "thumbnail": "https://i.ytimg.com/vi/kVdUhyC5xBE/hqdefault.jpg",
+                "lifetime_views": 8881,
+                "weekly_views": 8881
+            },
+            {
                 "id": "05tmwjbFLyI",
                 "title": "Cyah Behave",
                 "channel": "Voice - Topic",
                 "url": "https://www.youtube.com/watch?v=05tmwjbFLyI",
                 "thumbnail": "https://i.ytimg.com/vi/05tmwjbFLyI/hqdefault.jpg",
-                "lifetime_views": 1151181,
-                "weekly_views": 32
+                "lifetime_views": 1151247,
+                "weekly_views": 66
             },
             {
-                "id": "VIurjPVf2FQ",
-                "title": "Angie Maya - Wet (Official Music Video) Shark Tank Riddim | Vincy Soca 2026",
-                "channel": "Angie Maya",
-                "url": "https://www.youtube.com/watch?v=VIurjPVf2FQ",
-                "thumbnail": "https://i.ytimg.com/vi/VIurjPVf2FQ/hqdefault.jpg",
-                "lifetime_views": 16269,
+                "id": "RCYtWylfKKU",
+                "title": "KTB- Come Ova (Bouyon 2026) ",
+                "channel": "KTB Music",
+                "url": "https://www.youtube.com/watch?v=RCYtWylfKKU",
+                "thumbnail": "https://i.ytimg.com/vi/RCYtWylfKKU/hqdefault.jpg",
+                "lifetime_views": 92095,
                 "weekly_views": 26
-            },
-            {
-                "id": "mg6QGthmpSw",
-                "title": "Paris Coutain x Machel Montano x Travis World - Move Out D Way (Official Music Video) | Soca 2026",
-                "channel": "Machel Montano",
-                "url": "https://www.youtube.com/watch?v=mg6QGthmpSw",
-                "thumbnail": "https://i.ytimg.com/vi/mg6QGthmpSw/hqdefault.jpg",
-                "lifetime_views": 1327168,
-                "weekly_views": 4
-            },
-            {
-                "id": "f3Pd2dY9anY",
-                "title": "Leonce - Hot Already (Official Visualizer) | Soca 2026",
-                "channel": "JulianspromosTV | Soca Music",
-                "url": "https://www.youtube.com/watch?v=f3Pd2dY9anY",
-                "thumbnail": "https://i.ytimg.com/vi/f3Pd2dY9anY/hqdefault.jpg",
-                "lifetime_views": 6314,
-                "weekly_views": 2
-            },
-            {
-                "id": "EfbDRbvlzHQ",
-                "title": "Machel Montano ft. King Jammy - No Wayyy (Official Lyric Video) | Soca 2026",
-                "channel": "Machel Montano",
-                "url": "https://www.youtube.com/watch?v=EfbDRbvlzHQ",
-                "thumbnail": "https://i.ytimg.com/vi/EfbDRbvlzHQ/hqdefault.jpg",
-                "lifetime_views": 368719,
-                "weekly_views": 0
-            },
-            {
-                "id": "YQHzOK2pg-A",
-                "title": "Yung Kymani - Link Up (Official Visualizer) | Soca 2026",
-                "channel": "JulianspromosTV | Soca Music",
-                "url": "https://www.youtube.com/watch?v=YQHzOK2pg-A",
-                "thumbnail": "https://i.ytimg.com/vi/YQHzOK2pg-A/hqdefault.jpg",
-                "lifetime_views": 11603,
-                "weekly_views": 0
-            },
-            {
-                "id": "Ns15GF-p4xs",
-                "title": "Temptress &amp; Ms Rayne - Dutty Oil [Black Crown Riddim] | (Grenada Soca 2026 / Vincy Soca 2026)",
-                "channel": "Boss Raw Records",
-                "url": "https://www.youtube.com/watch?v=Ns15GF-p4xs",
-                "thumbnail": "https://i.ytimg.com/vi/Ns15GF-p4xs/hqdefault.jpg",
-                "lifetime_views": 9902,
-                "weekly_views": 0
-            },
-            {
-                "id": "Nw0xzOHPrNk",
-                "title": "ROMEY - RUM BAPTISTE | VINCY SOCA 2026",
-                "channel": "ROMEY MUSIC OFFICIAL",
-                "url": "https://www.youtube.com/watch?v=Nw0xzOHPrNk",
-                "thumbnail": "https://i.ytimg.com/vi/Nw0xzOHPrNk/hqdefault.jpg",
-                "lifetime_views": 7179,
-                "weekly_views": 0
-            },
-            {
-                "id": "dayurnXFpnU",
-                "title": "Sly - Road Call (Soul of Soca EP) 2026 Soca",
-                "channel": "Vye Twizeen Boyz",
-                "url": "https://www.youtube.com/watch?v=dayurnXFpnU",
-                "thumbnail": "https://i.ytimg.com/vi/dayurnXFpnU/hqdefault.jpg",
-                "lifetime_views": 5870,
-                "weekly_views": 0
             },
             {
                 "id": "ha7BLmPU63Q",
@@ -88,428 +277,8 @@
                 "channel": "SuperK ",
                 "url": "https://www.youtube.com/watch?v=ha7BLmPU63Q",
                 "thumbnail": "https://i.ytimg.com/vi/ha7BLmPU63Q/hqdefault.jpg",
-                "lifetime_views": 5667,
-                "weekly_views": 0
-            }
-        ],
-        "dancehall": [
-            {
-                "id": "ASzSqgz91CQ",
-                "title": "Wine &amp; Roll - Sean Paul x Shenseea (New Dancehall 2026 / Club Banger)",
-                "channel": "MAD LYRICS",
-                "url": "https://www.youtube.com/watch?v=ASzSqgz91CQ",
-                "thumbnail": "https://i.ytimg.com/vi/ASzSqgz91CQ/hqdefault.jpg",
-                "lifetime_views": 14769,
-                "weekly_views": 16
-            },
-            {
-                "id": "bXDtLtJ-7f4",
-                "title": "\ufffc Son of a King - Howard Marshall ft. Jee Swag | Dancehall 2026",
-                "channel": "Jee Swag",
-                "url": "https://www.youtube.com/watch?v=bXDtLtJ-7f4",
-                "thumbnail": "https://i.ytimg.com/vi/bXDtLtJ-7f4/hqdefault.jpg",
-                "lifetime_views": 86333,
-                "weekly_views": 2
-            },
-            {
-                "id": "kxQXU7z7zv4",
-                "title": "Pon Mi Arm \u2013 Riddim District (Official Visualizer) | Smooth Dancehall 2026 \ud83d\udd25",
-                "channel": "Riddim District",
-                "url": "https://www.youtube.com/watch?v=kxQXU7z7zv4",
-                "thumbnail": "https://i.ytimg.com/vi/kxQXU7z7zv4/hqdefault.jpg",
-                "lifetime_views": 10503,
-                "weekly_views": 0
-            },
-            {
-                "id": "txQo3C8X9KU",
-                "title": "Shenseea ft vybz kartel - Pure fire ( official music audio) | New dancehall 2026",
-                "channel": "ROMANCE TUNZ  ",
-                "url": "https://www.youtube.com/watch?v=txQo3C8X9KU",
-                "thumbnail": "https://i.ytimg.com/vi/txQo3C8X9KU/hqdefault.jpg",
-                "lifetime_views": 7484,
-                "weekly_views": 0
-            },
-            {
-                "id": "EUvW83R4h0k",
-                "title": "#vybzkartel - Pray To God WORLD #PREMIERE PREVIEW #gazanation #dancehall #2026",
-                "channel": "GazaNation Vevo",
-                "url": "https://www.youtube.com/watch?v=EUvW83R4h0k",
-                "thumbnail": "https://i.ytimg.com/vi/EUvW83R4h0k/hqdefault.jpg",
-                "lifetime_views": 5382,
-                "weekly_views": 0
-            }
-        ],
-        "bouyon": [
-            {
-                "id": "1bcoD2LSI_Y",
-                "title": "ARDEN.P ft MR. PRECKY - BOUYON IS US (Bouyon 2026)",
-                "channel": "Arden.P",
-                "url": "https://www.youtube.com/watch?v=1bcoD2LSI_Y",
-                "thumbnail": "https://i.ytimg.com/vi/1bcoD2LSI_Y/hqdefault.jpg",
-                "lifetime_views": 20796,
-                "weekly_views": 20796
-            },
-            {
-                "id": "HIAfZEqw2BI",
-                "title": "&quot;Bouyon Bouyon Riddim&quot; \ud83d\udd0bBouyon Instrumental 2026",
-                "channel": "Albrey Beats",
-                "url": "https://www.youtube.com/watch?v=HIAfZEqw2BI",
-                "thumbnail": "https://i.ytimg.com/vi/HIAfZEqw2BI/hqdefault.jpg",
-                "lifetime_views": 6488,
-                "weekly_views": 6488
-            },
-            {
-                "id": "Q2YsJjUynGM",
-                "title": "Khallion - Doh Watch Me [Remix] ft Gwada G | (Bouyon 2026)",
-                "channel": "Khallion",
-                "url": "https://www.youtube.com/watch?v=Q2YsJjUynGM",
-                "thumbnail": "https://i.ytimg.com/vi/Q2YsJjUynGM/hqdefault.jpg",
-                "lifetime_views": 5925,
-                "weekly_views": 5925
-            },
-            {
-                "id": "uNlR39JbBCM",
-                "title": "WYFL Warm Up Bouyon Riddim (Bouyon 2026) [Prod. by XavvoKnockin]",
-                "channel": "Knockin Records",
-                "url": "https://www.youtube.com/watch?v=uNlR39JbBCM",
-                "thumbnail": "https://i.ytimg.com/vi/uNlR39JbBCM/hqdefault.jpg",
-                "lifetime_views": 5805,
-                "weekly_views": 5805
-            },
-            {
-                "id": "k_3kclhIcBg",
-                "title": "Marshee - Wdw There (Official Music Video) / Bouyon 2026",
-                "channel": "\ud835\udde0\ud835\uddee\ud835\uddff\ud835\ude00\ud835\uddf5\ud835\uddf2\ud835\uddf2 \ud835\udde2\ud835\uddf3\ud835\uddf3\ud835\uddf6\ud835\uddf0\ud835\uddf6\ud835\uddee\ud835\uddf9 \ud83c\udde9\ud83c\uddf2",
-                "url": "https://www.youtube.com/watch?v=k_3kclhIcBg",
-                "thumbnail": "https://i.ytimg.com/vi/k_3kclhIcBg/hqdefault.jpg",
-                "lifetime_views": 5287,
-                "weekly_views": 5287
-            },
-            {
-                "id": "qxV83-NHBWw",
-                "title": "1T1 - In Di corner (Ft Miimii KDS)",
-                "channel": "1T1",
-                "url": "https://www.youtube.com/watch?v=qxV83-NHBWw",
-                "thumbnail": "https://i.ytimg.com/vi/qxV83-NHBWw/hqdefault.jpg",
-                "lifetime_views": 5536260,
-                "weekly_views": 264
-            },
-            {
-                "id": "TwYUcP4Kwm4",
-                "title": "J Lion - Take Another Man (Vincy 2026 bouyon)",
-                "channel": "Joshybeatz",
-                "url": "https://www.youtube.com/watch?v=TwYUcP4Kwm4",
-                "thumbnail": "https://i.ytimg.com/vi/TwYUcP4Kwm4/hqdefault.jpg",
-                "lifetime_views": 83021,
-                "weekly_views": 83
-            },
-            {
-                "id": "rAMNZV3YfCU",
-                "title": "Leyou ft TOUPIT - STRING VOLE Bouyon2k26   #nouveaut\u00e9 #bouyon #viralshorts  ",
-                "channel": "LEYOU ",
-                "url": "https://www.youtube.com/watch?v=rAMNZV3YfCU",
-                "thumbnail": "https://i.ytimg.com/vi/rAMNZV3YfCU/hqdefault.jpg",
-                "lifetime_views": 736979,
-                "weekly_views": 65
-            },
-            {
-                "id": "YXFtiXWekVc",
-                "title": "BRG Hollywood - Liff Up (Bouyon 2026) ",
-                "channel": "BRG Hollywood",
-                "url": "https://www.youtube.com/watch?v=YXFtiXWekVc",
-                "thumbnail": "https://i.ytimg.com/vi/YXFtiXWekVc/hqdefault.jpg",
-                "lifetime_views": 92220,
-                "weekly_views": 11
-            },
-            {
-                "id": "qucNM5hptKg",
-                "title": "Have What They Have",
-                "channel": "Dirty Dawg Pudaz - Topic",
-                "url": "https://www.youtube.com/watch?v=qucNM5hptKg",
-                "thumbnail": "https://i.ytimg.com/vi/qucNM5hptKg/hqdefault.jpg",
-                "lifetime_views": 198955,
-                "weekly_views": 10
-            },
-            {
-                "id": "jEFv5YoM5Q8",
-                "title": "Bouyon 2026 - What You Saying Riddim",
-                "channel": "Fr3EzE",
-                "url": "https://www.youtube.com/watch?v=jEFv5YoM5Q8",
-                "thumbnail": "https://i.ytimg.com/vi/jEFv5YoM5Q8/hqdefault.jpg",
-                "lifetime_views": 6945,
-                "weekly_views": 10
-            },
-            {
-                "id": "RCYtWylfKKU",
-                "title": "KTB- Come Ova (Bouyon 2026) ",
-                "channel": "KTB Music",
-                "url": "https://www.youtube.com/watch?v=RCYtWylfKKU",
-                "thumbnail": "https://i.ytimg.com/vi/RCYtWylfKKU/hqdefault.jpg",
-                "lifetime_views": 92069,
-                "weekly_views": 8
-            },
-            {
-                "id": "B-9awtc59cA",
-                "title": "DJMJ - CAN I GRAB IT ft PUDAZ &amp; BOUYON BARBIE (BOUYON 2026)EXPLICIT ",
-                "channel": "DJ MJ OFFICIAL",
-                "url": "https://www.youtube.com/watch?v=B-9awtc59cA",
-                "thumbnail": "https://i.ytimg.com/vi/B-9awtc59cA/hqdefault.jpg",
-                "lifetime_views": 96899,
-                "weekly_views": 3
-            },
-            {
-                "id": "ny3mBg5W6_Y",
-                "title": "DJMJ \u00d7 MV ON DE KEYS - WHO CAN PARTY LIKE ST JOE ? ( BOUYON 2026 )",
-                "channel": "DJ MJ OFFICIAL",
-                "url": "https://www.youtube.com/watch?v=ny3mBg5W6_Y",
-                "thumbnail": "https://i.ytimg.com/vi/ny3mBg5W6_Y/hqdefault.jpg",
-                "lifetime_views": 101176,
-                "weekly_views": 1
-            },
-            {
-                "id": "Bv7P8XBWkyQ",
-                "title": "Trilla-G - Congratulations ft. Th3rd (BOUYON 2026)",
-                "channel": "Trilla-G",
-                "url": "https://www.youtube.com/watch?v=Bv7P8XBWkyQ",
-                "thumbnail": "https://i.ytimg.com/vi/Bv7P8XBWkyQ/hqdefault.jpg",
-                "lifetime_views": 61666,
-                "weekly_views": 0
-            },
-            {
-                "id": "jC8l593hy3Y",
-                "title": "Trilla-G x Shelly - BAYFRONT (Official Lyric Video || Bouyon 2026)",
-                "channel": "Trilla-G",
-                "url": "https://www.youtube.com/watch?v=jC8l593hy3Y",
-                "thumbnail": "https://i.ytimg.com/vi/jC8l593hy3Y/hqdefault.jpg",
-                "lifetime_views": 50665,
-                "weekly_views": 0
-            },
-            {
-                "id": "QOyEWC8K1QE",
-                "title": "TK International &amp; Real Reel-Allu Real(Bouyon 2026)",
-                "channel": "TripleKayBand",
-                "url": "https://www.youtube.com/watch?v=QOyEWC8K1QE",
-                "thumbnail": "https://i.ytimg.com/vi/QOyEWC8K1QE/hqdefault.jpg",
-                "lifetime_views": 34343,
-                "weekly_views": 0
-            },
-            {
-                "id": "X5digKgIXzk",
-                "title": "BRG Hollywood Ft DJ Luchshiy - BRG Happy (Bouyon 2026)",
-                "channel": "BRG Hollywood",
-                "url": "https://www.youtube.com/watch?v=X5digKgIXzk",
-                "thumbnail": "https://i.ytimg.com/vi/X5digKgIXzk/hqdefault.jpg",
-                "lifetime_views": 33074,
-                "weekly_views": 0
-            },
-            {
-                "id": "0l_o0-u38JY",
-                "title": "Ebony Empress - Back Up Your Chat [Bouyon 2026] [Official Music Video]",
-                "channel": "Ebony Empress",
-                "url": "https://www.youtube.com/watch?v=0l_o0-u38JY",
-                "thumbnail": "https://i.ytimg.com/vi/0l_o0-u38JY/hqdefault.jpg",
-                "lifetime_views": 27088,
-                "weekly_views": 0
-            },
-            {
-                "id": "8tg90rTy9Rg",
-                "title": "Reo  - Under pressure ( Bouyon 2026 )",
-                "channel": "Reo",
-                "url": "https://www.youtube.com/watch?v=8tg90rTy9Rg",
-                "thumbnail": "https://i.ytimg.com/vi/8tg90rTy9Rg/hqdefault.jpg",
-                "lifetime_views": 25263,
-                "weekly_views": 0
-            },
-            {
-                "id": "HsJwv-Ud9O4",
-                "title": "Real Reel x Gwada G - WGFT Bouyon [Prod. by XavvoKnockin] (Bouyon 2026)",
-                "channel": "Knockin Records",
-                "url": "https://www.youtube.com/watch?v=HsJwv-Ud9O4",
-                "thumbnail": "https://i.ytimg.com/vi/HsJwv-Ud9O4/hqdefault.jpg",
-                "lifetime_views": 20052,
-                "weekly_views": 0
-            },
-            {
-                "id": "qbz1Sdcc98M",
-                "title": "Taffy X Candy - Something New (Bouyon 2026) Raw",
-                "channel": "DJTaffy Tha Riddim Beast",
-                "url": "https://www.youtube.com/watch?v=qbz1Sdcc98M",
-                "thumbnail": "https://i.ytimg.com/vi/qbz1Sdcc98M/hqdefault.jpg",
-                "lifetime_views": 19316,
-                "weekly_views": 0
-            },
-            {
-                "id": "zmsWoK7tVpc",
-                "title": "1T1 - One Family [ Bouyon 2026 ] @colorstv (Music Video) Cr\u00e9dit CKO | #1t1 Bouyon 2026 by Osocityyy ",
-                "channel": "Osocityyy ",
-                "url": "https://www.youtube.com/watch?v=zmsWoK7tVpc",
-                "thumbnail": "https://i.ytimg.com/vi/zmsWoK7tVpc/hqdefault.jpg",
-                "lifetime_views": 17735,
-                "weekly_views": 0
-            },
-            {
-                "id": "End-3-dy9pM",
-                "title": "Imran Nerdy - Feelings &quot;Official Audio&quot; Bouyon 2026",
-                "channel": "Imran Nerdy Music",
-                "url": "https://www.youtube.com/watch?v=End-3-dy9pM",
-                "thumbnail": "https://i.ytimg.com/vi/End-3-dy9pM/hqdefault.jpg",
-                "lifetime_views": 16440,
-                "weekly_views": 0
-            },
-            {
-                "id": "xLvAqdbRzZE",
-                "title": "SLYME HOYSS \u2013 I\u2019ll Link You (Bouyon 2026)",
-                "channel": "Slyme hoyss",
-                "url": "https://www.youtube.com/watch?v=xLvAqdbRzZE",
-                "thumbnail": "https://i.ytimg.com/vi/xLvAqdbRzZE/hqdefault.jpg",
-                "lifetime_views": 8479,
-                "weekly_views": 0
-            },
-            {
-                "id": "HPaA_ws37pU",
-                "title": "Trixx x Freddy x Taffy -Tru Tru  freestyle (Bouyon 2026) Raw",
-                "channel": "DJTaffy Tha Riddim Beast",
-                "url": "https://www.youtube.com/watch?v=HPaA_ws37pU",
-                "thumbnail": "https://i.ytimg.com/vi/HPaA_ws37pU/hqdefault.jpg",
-                "lifetime_views": 7637,
-                "weekly_views": 0
-            }
-        ],
-        "all_genres": [
-            {
-                "id": "1bcoD2LSI_Y",
-                "title": "ARDEN.P ft MR. PRECKY - BOUYON IS US (Bouyon 2026)",
-                "channel": "Arden.P",
-                "url": "https://www.youtube.com/watch?v=1bcoD2LSI_Y",
-                "thumbnail": "https://i.ytimg.com/vi/1bcoD2LSI_Y/hqdefault.jpg",
-                "lifetime_views": 20796,
-                "weekly_views": 20796
-            },
-            {
-                "id": "HIAfZEqw2BI",
-                "title": "&quot;Bouyon Bouyon Riddim&quot; \ud83d\udd0bBouyon Instrumental 2026",
-                "channel": "Albrey Beats",
-                "url": "https://www.youtube.com/watch?v=HIAfZEqw2BI",
-                "thumbnail": "https://i.ytimg.com/vi/HIAfZEqw2BI/hqdefault.jpg",
-                "lifetime_views": 6488,
-                "weekly_views": 6488
-            },
-            {
-                "id": "Q2YsJjUynGM",
-                "title": "Khallion - Doh Watch Me [Remix] ft Gwada G | (Bouyon 2026)",
-                "channel": "Khallion",
-                "url": "https://www.youtube.com/watch?v=Q2YsJjUynGM",
-                "thumbnail": "https://i.ytimg.com/vi/Q2YsJjUynGM/hqdefault.jpg",
-                "lifetime_views": 5925,
-                "weekly_views": 5925
-            },
-            {
-                "id": "uNlR39JbBCM",
-                "title": "WYFL Warm Up Bouyon Riddim (Bouyon 2026) [Prod. by XavvoKnockin]",
-                "channel": "Knockin Records",
-                "url": "https://www.youtube.com/watch?v=uNlR39JbBCM",
-                "thumbnail": "https://i.ytimg.com/vi/uNlR39JbBCM/hqdefault.jpg",
-                "lifetime_views": 5805,
-                "weekly_views": 5805
-            },
-            {
-                "id": "k_3kclhIcBg",
-                "title": "Marshee - Wdw There (Official Music Video) / Bouyon 2026",
-                "channel": "\ud835\udde0\ud835\uddee\ud835\uddff\ud835\ude00\ud835\uddf5\ud835\uddf2\ud835\uddf2 \ud835\udde2\ud835\uddf3\ud835\uddf3\ud835\uddf6\ud835\uddf0\ud835\uddf6\ud835\uddee\ud835\uddf9 \ud83c\udde9\ud83c\uddf2",
-                "url": "https://www.youtube.com/watch?v=k_3kclhIcBg",
-                "thumbnail": "https://i.ytimg.com/vi/k_3kclhIcBg/hqdefault.jpg",
-                "lifetime_views": 5287,
-                "weekly_views": 5287
-            },
-            {
-                "id": "qxV83-NHBWw",
-                "title": "1T1 - In Di corner (Ft Miimii KDS)",
-                "channel": "1T1",
-                "url": "https://www.youtube.com/watch?v=qxV83-NHBWw",
-                "thumbnail": "https://i.ytimg.com/vi/qxV83-NHBWw/hqdefault.jpg",
-                "lifetime_views": 5536260,
-                "weekly_views": 264
-            },
-            {
-                "id": "TwYUcP4Kwm4",
-                "title": "J Lion - Take Another Man (Vincy 2026 bouyon)",
-                "channel": "Joshybeatz",
-                "url": "https://www.youtube.com/watch?v=TwYUcP4Kwm4",
-                "thumbnail": "https://i.ytimg.com/vi/TwYUcP4Kwm4/hqdefault.jpg",
-                "lifetime_views": 83021,
-                "weekly_views": 83
-            },
-            {
-                "id": "rAMNZV3YfCU",
-                "title": "Leyou ft TOUPIT - STRING VOLE Bouyon2k26   #nouveaut\u00e9 #bouyon #viralshorts  ",
-                "channel": "LEYOU ",
-                "url": "https://www.youtube.com/watch?v=rAMNZV3YfCU",
-                "thumbnail": "https://i.ytimg.com/vi/rAMNZV3YfCU/hqdefault.jpg",
-                "lifetime_views": 736979,
-                "weekly_views": 65
-            },
-            {
-                "id": "05tmwjbFLyI",
-                "title": "Cyah Behave",
-                "channel": "Voice - Topic",
-                "url": "https://www.youtube.com/watch?v=05tmwjbFLyI",
-                "thumbnail": "https://i.ytimg.com/vi/05tmwjbFLyI/hqdefault.jpg",
-                "lifetime_views": 1151181,
-                "weekly_views": 32
-            },
-            {
-                "id": "VIurjPVf2FQ",
-                "title": "Angie Maya - Wet (Official Music Video) Shark Tank Riddim | Vincy Soca 2026",
-                "channel": "Angie Maya",
-                "url": "https://www.youtube.com/watch?v=VIurjPVf2FQ",
-                "thumbnail": "https://i.ytimg.com/vi/VIurjPVf2FQ/hqdefault.jpg",
-                "lifetime_views": 16269,
-                "weekly_views": 26
-            },
-            {
-                "id": "ASzSqgz91CQ",
-                "title": "Wine &amp; Roll - Sean Paul x Shenseea (New Dancehall 2026 / Club Banger)",
-                "channel": "MAD LYRICS",
-                "url": "https://www.youtube.com/watch?v=ASzSqgz91CQ",
-                "thumbnail": "https://i.ytimg.com/vi/ASzSqgz91CQ/hqdefault.jpg",
-                "lifetime_views": 14769,
-                "weekly_views": 16
-            },
-            {
-                "id": "YXFtiXWekVc",
-                "title": "BRG Hollywood - Liff Up (Bouyon 2026) ",
-                "channel": "BRG Hollywood",
-                "url": "https://www.youtube.com/watch?v=YXFtiXWekVc",
-                "thumbnail": "https://i.ytimg.com/vi/YXFtiXWekVc/hqdefault.jpg",
-                "lifetime_views": 92220,
-                "weekly_views": 11
-            },
-            {
-                "id": "qucNM5hptKg",
-                "title": "Have What They Have",
-                "channel": "Dirty Dawg Pudaz - Topic",
-                "url": "https://www.youtube.com/watch?v=qucNM5hptKg",
-                "thumbnail": "https://i.ytimg.com/vi/qucNM5hptKg/hqdefault.jpg",
-                "lifetime_views": 198955,
-                "weekly_views": 10
-            },
-            {
-                "id": "jEFv5YoM5Q8",
-                "title": "Bouyon 2026 - What You Saying Riddim",
-                "channel": "Fr3EzE",
-                "url": "https://www.youtube.com/watch?v=jEFv5YoM5Q8",
-                "thumbnail": "https://i.ytimg.com/vi/jEFv5YoM5Q8/hqdefault.jpg",
-                "lifetime_views": 6945,
-                "weekly_views": 10
-            },
-            {
-                "id": "RCYtWylfKKU",
-                "title": "KTB- Come Ova (Bouyon 2026) ",
-                "channel": "KTB Music",
-                "url": "https://www.youtube.com/watch?v=RCYtWylfKKU",
-                "thumbnail": "https://i.ytimg.com/vi/RCYtWylfKKU/hqdefault.jpg",
-                "lifetime_views": 92069,
-                "weekly_views": 8
+                "lifetime_views": 5686,
+                "weekly_views": 19
             },
             {
                 "id": "mg6QGthmpSw",
@@ -517,53 +286,8 @@
                 "channel": "Machel Montano",
                 "url": "https://www.youtube.com/watch?v=mg6QGthmpSw",
                 "thumbnail": "https://i.ytimg.com/vi/mg6QGthmpSw/hqdefault.jpg",
-                "lifetime_views": 1327168,
-                "weekly_views": 4
-            },
-            {
-                "id": "B-9awtc59cA",
-                "title": "DJMJ - CAN I GRAB IT ft PUDAZ &amp; BOUYON BARBIE (BOUYON 2026)EXPLICIT ",
-                "channel": "DJ MJ OFFICIAL",
-                "url": "https://www.youtube.com/watch?v=B-9awtc59cA",
-                "thumbnail": "https://i.ytimg.com/vi/B-9awtc59cA/hqdefault.jpg",
-                "lifetime_views": 96899,
-                "weekly_views": 3
-            },
-            {
-                "id": "f3Pd2dY9anY",
-                "title": "Leonce - Hot Already (Official Visualizer) | Soca 2026",
-                "channel": "JulianspromosTV | Soca Music",
-                "url": "https://www.youtube.com/watch?v=f3Pd2dY9anY",
-                "thumbnail": "https://i.ytimg.com/vi/f3Pd2dY9anY/hqdefault.jpg",
-                "lifetime_views": 6314,
-                "weekly_views": 2
-            },
-            {
-                "id": "bXDtLtJ-7f4",
-                "title": "\ufffc Son of a King - Howard Marshall ft. Jee Swag | Dancehall 2026",
-                "channel": "Jee Swag",
-                "url": "https://www.youtube.com/watch?v=bXDtLtJ-7f4",
-                "thumbnail": "https://i.ytimg.com/vi/bXDtLtJ-7f4/hqdefault.jpg",
-                "lifetime_views": 86333,
-                "weekly_views": 2
-            },
-            {
-                "id": "ny3mBg5W6_Y",
-                "title": "DJMJ \u00d7 MV ON DE KEYS - WHO CAN PARTY LIKE ST JOE ? ( BOUYON 2026 )",
-                "channel": "DJ MJ OFFICIAL",
-                "url": "https://www.youtube.com/watch?v=ny3mBg5W6_Y",
-                "thumbnail": "https://i.ytimg.com/vi/ny3mBg5W6_Y/hqdefault.jpg",
-                "lifetime_views": 101176,
-                "weekly_views": 1
-            },
-            {
-                "id": "EfbDRbvlzHQ",
-                "title": "Machel Montano ft. King Jammy - No Wayyy (Official Lyric Video) | Soca 2026",
-                "channel": "Machel Montano",
-                "url": "https://www.youtube.com/watch?v=EfbDRbvlzHQ",
-                "thumbnail": "https://i.ytimg.com/vi/EfbDRbvlzHQ/hqdefault.jpg",
-                "lifetime_views": 368719,
-                "weekly_views": 0
+                "lifetime_views": 1327176,
+                "weekly_views": 8
             },
             {
                 "id": "YQHzOK2pg-A",
@@ -575,21 +299,12 @@
                 "weekly_views": 0
             },
             {
-                "id": "Ns15GF-p4xs",
-                "title": "Temptress &amp; Ms Rayne - Dutty Oil [Black Crown Riddim] | (Grenada Soca 2026 / Vincy Soca 2026)",
-                "channel": "Boss Raw Records",
-                "url": "https://www.youtube.com/watch?v=Ns15GF-p4xs",
-                "thumbnail": "https://i.ytimg.com/vi/Ns15GF-p4xs/hqdefault.jpg",
-                "lifetime_views": 9902,
-                "weekly_views": 0
-            },
-            {
-                "id": "Nw0xzOHPrNk",
-                "title": "ROMEY - RUM BAPTISTE | VINCY SOCA 2026",
-                "channel": "ROMEY MUSIC OFFICIAL",
-                "url": "https://www.youtube.com/watch?v=Nw0xzOHPrNk",
-                "thumbnail": "https://i.ytimg.com/vi/Nw0xzOHPrNk/hqdefault.jpg",
-                "lifetime_views": 7179,
+                "id": "f3Pd2dY9anY",
+                "title": "Leonce - Hot Already (Official Visualizer) | Soca 2026",
+                "channel": "JulianspromosTV | Soca Music",
+                "url": "https://www.youtube.com/watch?v=f3Pd2dY9anY",
+                "thumbnail": "https://i.ytimg.com/vi/f3Pd2dY9anY/hqdefault.jpg",
+                "lifetime_views": 6314,
                 "weekly_views": 0
             },
             {
@@ -600,6 +315,479 @@
                 "thumbnail": "https://i.ytimg.com/vi/dayurnXFpnU/hqdefault.jpg",
                 "lifetime_views": 5870,
                 "weekly_views": 0
+            }
+        ],
+        "dancehall": [
+            {
+                "id": "tcEFkqD9cx0",
+                "title": "Vybz Kartel, Shenseea - PANIC (Official Music Video)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=tcEFkqD9cx0",
+                "thumbnail": "https://i.ytimg.com/vi/tcEFkqD9cx0/hqdefault.jpg",
+                "lifetime_views": 10715018,
+                "weekly_views": 10715018
+            },
+            {
+                "id": "HsaXkeejbEA",
+                "title": "Mavado, Dj Mac, Crashdummy - Bad &amp; Bbc Rich \u00a0(Official Music Video) | WYFL Riddim",
+                "channel": "mavadoVEVO",
+                "url": "https://www.youtube.com/watch?v=HsaXkeejbEA",
+                "thumbnail": "https://i.ytimg.com/vi/HsaXkeejbEA/hqdefault.jpg",
+                "lifetime_views": 6937389,
+                "weekly_views": 6937389
+            },
+            {
+                "id": "tfpTR_TRSLM",
+                "title": "Malie Donn - Gangster Gospel (Official Music Video)",
+                "channel": "Malie Donn ",
+                "url": "https://www.youtube.com/watch?v=tfpTR_TRSLM",
+                "thumbnail": "https://i.ytimg.com/vi/tfpTR_TRSLM/hqdefault.jpg",
+                "lifetime_views": 4737875,
+                "weekly_views": 4737875
+            },
+            {
+                "id": "YAxsUCaUfA0",
+                "title": "Najeeriii, MXSSIVH - Still Standing (Official Video)",
+                "channel": "Najeeriii",
+                "url": "https://www.youtube.com/watch?v=YAxsUCaUfA0",
+                "thumbnail": "https://i.ytimg.com/vi/YAxsUCaUfA0/hqdefault.jpg",
+                "lifetime_views": 3843420,
+                "weekly_views": 3843420
+            },
+            {
+                "id": "d0UdGKrvMno",
+                "title": "Popcaan - Life Still a Gwaan (Official Video)",
+                "channel": "PopcaanVEVO",
+                "url": "https://www.youtube.com/watch?v=d0UdGKrvMno",
+                "thumbnail": "https://i.ytimg.com/vi/d0UdGKrvMno/hqdefault.jpg",
+                "lifetime_views": 3505713,
+                "weekly_views": 3505713
+            },
+            {
+                "id": "nFDsUUyF66w",
+                "title": "Vybz Kartel - Victory (Official Music Video)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=nFDsUUyF66w",
+                "thumbnail": "https://i.ytimg.com/vi/nFDsUUyF66w/hqdefault.jpg",
+                "lifetime_views": 3248069,
+                "weekly_views": 3248069
+            },
+            {
+                "id": "j5qHyqLMbnM",
+                "title": "Chronic Law - Like Samson (Official Video)",
+                "channel": "ChronicLawVEVO",
+                "url": "https://www.youtube.com/watch?v=j5qHyqLMbnM",
+                "thumbnail": "https://i.ytimg.com/vi/j5qHyqLMbnM/hqdefault.jpg",
+                "lifetime_views": 3019430,
+                "weekly_views": 3019430
+            },
+            {
+                "id": "6IqKY7hKYMw",
+                "title": "RajahWild, JiggyD - TRUMPET (Official Video) | AfterHour Riddim",
+                "channel": "RajahWildVEVO",
+                "url": "https://www.youtube.com/watch?v=6IqKY7hKYMw",
+                "thumbnail": "https://i.ytimg.com/vi/6IqKY7hKYMw/hqdefault.jpg",
+                "lifetime_views": 3008404,
+                "weekly_views": 3008404
+            },
+            {
+                "id": "N438-Y6pVNo",
+                "title": "Chronic Law - Paranoid Forever (Official Music Video)",
+                "channel": "ChronicLawVEVO",
+                "url": "https://www.youtube.com/watch?v=N438-Y6pVNo",
+                "thumbnail": "https://i.ytimg.com/vi/N438-Y6pVNo/hqdefault.jpg",
+                "lifetime_views": 2258187,
+                "weekly_views": 2258187
+            },
+            {
+                "id": "a0K3ClKrBlE",
+                "title": "Masicka - Life of Sin (Official Music Video)",
+                "channel": "Masicka",
+                "url": "https://www.youtube.com/watch?v=a0K3ClKrBlE",
+                "thumbnail": "https://i.ytimg.com/vi/a0K3ClKrBlE/hqdefault.jpg",
+                "lifetime_views": 2251212,
+                "weekly_views": 2251212
+            },
+            {
+                "id": "93l9e9mgpWI",
+                "title": "Mavado - Big Money | Official Music Video",
+                "channel": "mavadoVEVO",
+                "url": "https://www.youtube.com/watch?v=93l9e9mgpWI",
+                "thumbnail": "https://i.ytimg.com/vi/93l9e9mgpWI/hqdefault.jpg",
+                "lifetime_views": 2041913,
+                "weekly_views": 2041913
+            },
+            {
+                "id": "6VwLLfk0w0s",
+                "title": "Jamal, Extol - Money Fragrance (Official Video)",
+                "channel": "JamalOfficialVEVO",
+                "url": "https://www.youtube.com/watch?v=6VwLLfk0w0s",
+                "thumbnail": "https://i.ytimg.com/vi/6VwLLfk0w0s/hqdefault.jpg",
+                "lifetime_views": 1839946,
+                "weekly_views": 1839946
+            },
+            {
+                "id": "G-UPpIteFE8",
+                "title": "450 - World On Fire (Official Music Video)",
+                "channel": "450",
+                "url": "https://www.youtube.com/watch?v=G-UPpIteFE8",
+                "thumbnail": "https://i.ytimg.com/vi/G-UPpIteFE8/hqdefault.jpg",
+                "lifetime_views": 1665405,
+                "weekly_views": 1665405
+            },
+            {
+                "id": "miLjF_WiJoY",
+                "title": "Skeng - Pam Pam | Official Music Video (Bobby Lane Project)",
+                "channel": "SkengVEVO",
+                "url": "https://www.youtube.com/watch?v=miLjF_WiJoY",
+                "thumbnail": "https://i.ytimg.com/vi/miLjF_WiJoY/hqdefault.jpg",
+                "lifetime_views": 1560442,
+                "weekly_views": 1560442
+            },
+            {
+                "id": "IXgS4a8t5uw",
+                "title": "Alkaline - Graduate (Official Visualizer)",
+                "channel": "AlkalineVEVO",
+                "url": "https://www.youtube.com/watch?v=IXgS4a8t5uw",
+                "thumbnail": "https://i.ytimg.com/vi/IXgS4a8t5uw/hqdefault.jpg",
+                "lifetime_views": 1529735,
+                "weekly_views": 1529735
+            },
+            {
+                "id": "viaCSX5wyWU",
+                "title": "Jamal - New Year (Cypher Music Video)",
+                "channel": "JamalOfficialVEVO",
+                "url": "https://www.youtube.com/watch?v=viaCSX5wyWU",
+                "thumbnail": "https://i.ytimg.com/vi/viaCSX5wyWU/hqdefault.jpg",
+                "lifetime_views": 1432636,
+                "weekly_views": 1432636
+            },
+            {
+                "id": "GrnEjm9DR5U",
+                "title": "Chronic Law - Step Out (Official Video)",
+                "channel": "ChronicLawVEVO",
+                "url": "https://www.youtube.com/watch?v=GrnEjm9DR5U",
+                "thumbnail": "https://i.ytimg.com/vi/GrnEjm9DR5U/hqdefault.jpg",
+                "lifetime_views": 1112302,
+                "weekly_views": 1112302
+            },
+            {
+                "id": "GLIQiGnyFz0",
+                "title": "Yaksta - Roar (Official Video)",
+                "channel": "Yaksta",
+                "url": "https://www.youtube.com/watch?v=GLIQiGnyFz0",
+                "thumbnail": "https://i.ytimg.com/vi/GLIQiGnyFz0/hqdefault.jpg",
+                "lifetime_views": 1088225,
+                "weekly_views": 1088225
+            },
+            {
+                "id": "6dwdFeP6T48",
+                "title": "Lady Lava - High Beam (Soundboy Ryan Remix) 2026 Dancehall",
+                "channel": "Soundboy Ryan Music",
+                "url": "https://www.youtube.com/watch?v=6dwdFeP6T48",
+                "thumbnail": "https://i.ytimg.com/vi/6dwdFeP6T48/hqdefault.jpg",
+                "lifetime_views": 929974,
+                "weekly_views": 929974
+            },
+            {
+                "id": "0Brp6PJOlig",
+                "title": "Vybz Kartel - GOD Says (official audio)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=0Brp6PJOlig",
+                "thumbnail": "https://i.ytimg.com/vi/0Brp6PJOlig/hqdefault.jpg",
+                "lifetime_views": 849139,
+                "weekly_views": 849139
+            },
+            {
+                "id": "4aq3m78sEQo",
+                "title": "Shaggy, Beres Hammond, Dexta Daps - Dancehall Nice | Official Music Video",
+                "channel": "shaggymedia",
+                "url": "https://www.youtube.com/watch?v=4aq3m78sEQo",
+                "thumbnail": "https://i.ytimg.com/vi/4aq3m78sEQo/hqdefault.jpg",
+                "lifetime_views": 840351,
+                "weekly_views": 840351
+            },
+            {
+                "id": "U3FM_97Tzxs",
+                "title": "Shady",
+                "channel": "Cheema Y - Topic",
+                "url": "https://www.youtube.com/watch?v=U3FM_97Tzxs",
+                "thumbnail": "https://i.ytimg.com/vi/U3FM_97Tzxs/hqdefault.jpg",
+                "lifetime_views": 794525,
+                "weekly_views": 794525
+            },
+            {
+                "id": "zWud3epIC4k",
+                "title": "Zurdo MC, Willian Sanchez  - Suerte (Video Oficial)",
+                "channel": "Zurdo MC",
+                "url": "https://www.youtube.com/watch?v=zWud3epIC4k",
+                "thumbnail": "https://i.ytimg.com/vi/zWud3epIC4k/hqdefault.jpg",
+                "lifetime_views": 700568,
+                "weekly_views": 700568
+            },
+            {
+                "id": "FPn7rC02_VA",
+                "title": "Slip &amp; Slide",
+                "channel": "Masicka - Topic",
+                "url": "https://www.youtube.com/watch?v=FPn7rC02_VA",
+                "thumbnail": "https://i.ytimg.com/vi/FPn7rC02_VA/hqdefault.jpg",
+                "lifetime_views": 498111,
+                "weekly_views": 498111
+            },
+            {
+                "id": "H48MsHzvGD8",
+                "title": "Vybz Kartel - ONSLAUGHT (official audio)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=H48MsHzvGD8",
+                "thumbnail": "https://i.ytimg.com/vi/H48MsHzvGD8/hqdefault.jpg",
+                "lifetime_views": 410980,
+                "weekly_views": 410980
+            },
+            {
+                "id": "BzNCTC9J55o",
+                "title": "Boy Kay Naneka Fye----- Falling  Ft  Tianna  X Blood Kid  (Official Music Video)",
+                "channel": "Boy Kay Naneka Fye",
+                "url": "https://www.youtube.com/watch?v=BzNCTC9J55o",
+                "thumbnail": "https://i.ytimg.com/vi/BzNCTC9J55o/hqdefault.jpg",
+                "lifetime_views": 242426,
+                "weekly_views": 242426
+            },
+            {
+                "id": "VL5ka8Z7OhQ",
+                "title": "WARNING \u2013 Shatta Wale ft. Popcaan (Official Audio) | Afro Reggae Dancehall 2026",
+                "channel": "ABILITY GH-TV",
+                "url": "https://www.youtube.com/watch?v=VL5ka8Z7OhQ",
+                "thumbnail": "https://i.ytimg.com/vi/VL5ka8Z7OhQ/hqdefault.jpg",
+                "lifetime_views": 121266,
+                "weekly_views": 121266
+            }
+        ],
+        "bouyon": [],
+        "all_genres": [
+            {
+                "id": "tcEFkqD9cx0",
+                "title": "Vybz Kartel, Shenseea - PANIC (Official Music Video)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=tcEFkqD9cx0",
+                "thumbnail": "https://i.ytimg.com/vi/tcEFkqD9cx0/hqdefault.jpg",
+                "lifetime_views": 10715018,
+                "weekly_views": 10715018
+            },
+            {
+                "id": "HsaXkeejbEA",
+                "title": "Mavado, Dj Mac, Crashdummy - Bad &amp; Bbc Rich \u00a0(Official Music Video) | WYFL Riddim",
+                "channel": "mavadoVEVO",
+                "url": "https://www.youtube.com/watch?v=HsaXkeejbEA",
+                "thumbnail": "https://i.ytimg.com/vi/HsaXkeejbEA/hqdefault.jpg",
+                "lifetime_views": 6937389,
+                "weekly_views": 6937389
+            },
+            {
+                "id": "tfpTR_TRSLM",
+                "title": "Malie Donn - Gangster Gospel (Official Music Video)",
+                "channel": "Malie Donn ",
+                "url": "https://www.youtube.com/watch?v=tfpTR_TRSLM",
+                "thumbnail": "https://i.ytimg.com/vi/tfpTR_TRSLM/hqdefault.jpg",
+                "lifetime_views": 4737875,
+                "weekly_views": 4737875
+            },
+            {
+                "id": "YAxsUCaUfA0",
+                "title": "Najeeriii, MXSSIVH - Still Standing (Official Video)",
+                "channel": "Najeeriii",
+                "url": "https://www.youtube.com/watch?v=YAxsUCaUfA0",
+                "thumbnail": "https://i.ytimg.com/vi/YAxsUCaUfA0/hqdefault.jpg",
+                "lifetime_views": 3843420,
+                "weekly_views": 3843420
+            },
+            {
+                "id": "d0UdGKrvMno",
+                "title": "Popcaan - Life Still a Gwaan (Official Video)",
+                "channel": "PopcaanVEVO",
+                "url": "https://www.youtube.com/watch?v=d0UdGKrvMno",
+                "thumbnail": "https://i.ytimg.com/vi/d0UdGKrvMno/hqdefault.jpg",
+                "lifetime_views": 3505713,
+                "weekly_views": 3505713
+            },
+            {
+                "id": "nFDsUUyF66w",
+                "title": "Vybz Kartel - Victory (Official Music Video)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=nFDsUUyF66w",
+                "thumbnail": "https://i.ytimg.com/vi/nFDsUUyF66w/hqdefault.jpg",
+                "lifetime_views": 3248069,
+                "weekly_views": 3248069
+            },
+            {
+                "id": "j5qHyqLMbnM",
+                "title": "Chronic Law - Like Samson (Official Video)",
+                "channel": "ChronicLawVEVO",
+                "url": "https://www.youtube.com/watch?v=j5qHyqLMbnM",
+                "thumbnail": "https://i.ytimg.com/vi/j5qHyqLMbnM/hqdefault.jpg",
+                "lifetime_views": 3019430,
+                "weekly_views": 3019430
+            },
+            {
+                "id": "6IqKY7hKYMw",
+                "title": "RajahWild, JiggyD - TRUMPET (Official Video) | AfterHour Riddim",
+                "channel": "RajahWildVEVO",
+                "url": "https://www.youtube.com/watch?v=6IqKY7hKYMw",
+                "thumbnail": "https://i.ytimg.com/vi/6IqKY7hKYMw/hqdefault.jpg",
+                "lifetime_views": 3008404,
+                "weekly_views": 3008404
+            },
+            {
+                "id": "N438-Y6pVNo",
+                "title": "Chronic Law - Paranoid Forever (Official Music Video)",
+                "channel": "ChronicLawVEVO",
+                "url": "https://www.youtube.com/watch?v=N438-Y6pVNo",
+                "thumbnail": "https://i.ytimg.com/vi/N438-Y6pVNo/hqdefault.jpg",
+                "lifetime_views": 2258187,
+                "weekly_views": 2258187
+            },
+            {
+                "id": "a0K3ClKrBlE",
+                "title": "Masicka - Life of Sin (Official Music Video)",
+                "channel": "Masicka",
+                "url": "https://www.youtube.com/watch?v=a0K3ClKrBlE",
+                "thumbnail": "https://i.ytimg.com/vi/a0K3ClKrBlE/hqdefault.jpg",
+                "lifetime_views": 2251212,
+                "weekly_views": 2251212
+            },
+            {
+                "id": "93l9e9mgpWI",
+                "title": "Mavado - Big Money | Official Music Video",
+                "channel": "mavadoVEVO",
+                "url": "https://www.youtube.com/watch?v=93l9e9mgpWI",
+                "thumbnail": "https://i.ytimg.com/vi/93l9e9mgpWI/hqdefault.jpg",
+                "lifetime_views": 2041913,
+                "weekly_views": 2041913
+            },
+            {
+                "id": "6VwLLfk0w0s",
+                "title": "Jamal, Extol - Money Fragrance (Official Video)",
+                "channel": "JamalOfficialVEVO",
+                "url": "https://www.youtube.com/watch?v=6VwLLfk0w0s",
+                "thumbnail": "https://i.ytimg.com/vi/6VwLLfk0w0s/hqdefault.jpg",
+                "lifetime_views": 1839946,
+                "weekly_views": 1839946
+            },
+            {
+                "id": "G-UPpIteFE8",
+                "title": "450 - World On Fire (Official Music Video)",
+                "channel": "450",
+                "url": "https://www.youtube.com/watch?v=G-UPpIteFE8",
+                "thumbnail": "https://i.ytimg.com/vi/G-UPpIteFE8/hqdefault.jpg",
+                "lifetime_views": 1665405,
+                "weekly_views": 1665405
+            },
+            {
+                "id": "miLjF_WiJoY",
+                "title": "Skeng - Pam Pam | Official Music Video (Bobby Lane Project)",
+                "channel": "SkengVEVO",
+                "url": "https://www.youtube.com/watch?v=miLjF_WiJoY",
+                "thumbnail": "https://i.ytimg.com/vi/miLjF_WiJoY/hqdefault.jpg",
+                "lifetime_views": 1560442,
+                "weekly_views": 1560442
+            },
+            {
+                "id": "IXgS4a8t5uw",
+                "title": "Alkaline - Graduate (Official Visualizer)",
+                "channel": "AlkalineVEVO",
+                "url": "https://www.youtube.com/watch?v=IXgS4a8t5uw",
+                "thumbnail": "https://i.ytimg.com/vi/IXgS4a8t5uw/hqdefault.jpg",
+                "lifetime_views": 1529735,
+                "weekly_views": 1529735
+            },
+            {
+                "id": "viaCSX5wyWU",
+                "title": "Jamal - New Year (Cypher Music Video)",
+                "channel": "JamalOfficialVEVO",
+                "url": "https://www.youtube.com/watch?v=viaCSX5wyWU",
+                "thumbnail": "https://i.ytimg.com/vi/viaCSX5wyWU/hqdefault.jpg",
+                "lifetime_views": 1432636,
+                "weekly_views": 1432636
+            },
+            {
+                "id": "GrnEjm9DR5U",
+                "title": "Chronic Law - Step Out (Official Video)",
+                "channel": "ChronicLawVEVO",
+                "url": "https://www.youtube.com/watch?v=GrnEjm9DR5U",
+                "thumbnail": "https://i.ytimg.com/vi/GrnEjm9DR5U/hqdefault.jpg",
+                "lifetime_views": 1112302,
+                "weekly_views": 1112302
+            },
+            {
+                "id": "GLIQiGnyFz0",
+                "title": "Yaksta - Roar (Official Video)",
+                "channel": "Yaksta",
+                "url": "https://www.youtube.com/watch?v=GLIQiGnyFz0",
+                "thumbnail": "https://i.ytimg.com/vi/GLIQiGnyFz0/hqdefault.jpg",
+                "lifetime_views": 1088225,
+                "weekly_views": 1088225
+            },
+            {
+                "id": "6dwdFeP6T48",
+                "title": "Lady Lava - High Beam (Soundboy Ryan Remix) 2026 Dancehall",
+                "channel": "Soundboy Ryan Music",
+                "url": "https://www.youtube.com/watch?v=6dwdFeP6T48",
+                "thumbnail": "https://i.ytimg.com/vi/6dwdFeP6T48/hqdefault.jpg",
+                "lifetime_views": 929974,
+                "weekly_views": 929974
+            },
+            {
+                "id": "0Brp6PJOlig",
+                "title": "Vybz Kartel - GOD Says (official audio)",
+                "channel": "VybzKartelVEVO",
+                "url": "https://www.youtube.com/watch?v=0Brp6PJOlig",
+                "thumbnail": "https://i.ytimg.com/vi/0Brp6PJOlig/hqdefault.jpg",
+                "lifetime_views": 849139,
+                "weekly_views": 849139
+            },
+            {
+                "id": "4aq3m78sEQo",
+                "title": "Shaggy, Beres Hammond, Dexta Daps - Dancehall Nice | Official Music Video",
+                "channel": "shaggymedia",
+                "url": "https://www.youtube.com/watch?v=4aq3m78sEQo",
+                "thumbnail": "https://i.ytimg.com/vi/4aq3m78sEQo/hqdefault.jpg",
+                "lifetime_views": 840351,
+                "weekly_views": 840351
+            },
+            {
+                "id": "U3FM_97Tzxs",
+                "title": "Shady",
+                "channel": "Cheema Y - Topic",
+                "url": "https://www.youtube.com/watch?v=U3FM_97Tzxs",
+                "thumbnail": "https://i.ytimg.com/vi/U3FM_97Tzxs/hqdefault.jpg",
+                "lifetime_views": 794525,
+                "weekly_views": 794525
+            },
+            {
+                "id": "zWud3epIC4k",
+                "title": "Zurdo MC, Willian Sanchez  - Suerte (Video Oficial)",
+                "channel": "Zurdo MC",
+                "url": "https://www.youtube.com/watch?v=zWud3epIC4k",
+                "thumbnail": "https://i.ytimg.com/vi/zWud3epIC4k/hqdefault.jpg",
+                "lifetime_views": 700568,
+                "weekly_views": 700568
+            },
+            {
+                "id": "-39f7p6I_wQ",
+                "title": "LADY LAVA  (HIGH BEAM) X STRONGY1996 X ISICIREAM  [OFFICIAL AUDIO] ZESS 2026\ud83e\udd75\ud83e\udd76\ud83e\udd2a\ud83d\udd25# I.G (STRONGY1996) ",
+                "channel": "Trinidadissomthingelse",
+                "url": "https://www.youtube.com/watch?v=-39f7p6I_wQ",
+                "thumbnail": "https://i.ytimg.com/vi/-39f7p6I_wQ/hqdefault.jpg",
+                "lifetime_views": 651526,
+                "weekly_views": 651526
+            },
+            {
+                "id": "FPn7rC02_VA",
+                "title": "Slip &amp; Slide",
+                "channel": "Masicka - Topic",
+                "url": "https://www.youtube.com/watch?v=FPn7rC02_VA",
+                "thumbnail": "https://i.ytimg.com/vi/FPn7rC02_VA/hqdefault.jpg",
+                "lifetime_views": 498111,
+                "weekly_views": 498111
             }
         ]
     }
