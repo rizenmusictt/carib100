@@ -13,7 +13,7 @@ GOOGLE_CREDS_JSON = os.environ.get("GOOGLE_CREDENTIALS")
 SPREADSHEET_ID = os.environ.get("SPREADSHEET_ID")
 
 if not API_KEY or not GOOGLE_CREDS_JSON or not SPREADSHEET_ID:
-    print("Error: Missing required YOUTUBE_API_KEY, GOOGLE_CREDENTIALS, or SPREADSHEET_ID environment variables.")
+    print("Error: Missing required environment variables.")
     exit(1)
 
 today = datetime.utcnow()
@@ -25,233 +25,116 @@ genres = ["soca", "dancehall", "bouyon", "afrobeats"]
 history = {}
 is_first_run = True
 
-# 2. Pinpoint Search Matrix (Binding genre to artists to prevent global video leaks)
+# 2. Optimized Search Matrix
 GENRE_QUERIES = {
-    "soca": f'"soca {current_year}" OR "{current_year} soca" OR "soca Machel Montano" OR "soca Bunji Garlin" OR "soca Kes" OR "soca Voice" OR "soca Patrice Roberts" OR "soca Nadia Batson" OR "soca Skinny Fabulous" OR "soca Lyrikal" OR "soca Nailah Blackman"',
+    "soca": f'"soca {current_year}" OR "{current_year} soca"',
     "dancehall": f'"dancehall {current_year}" OR "{current_year} dancehall" OR "dancehall Shenseea" OR "dancehall Skeng" OR "dancehall Ayetian" OR "dancehall Valiant" OR "dancehall Skillibeng" OR "dancehall Vybz Kartel" OR "dancehall Mavado" OR "dancehall Masicka" OR "dancehall Popcaan" OR "dancehall Teejay"',
-    "bouyon": f'"bouyon {current_year}" OR "{current_year} bouyon" OR "bouyon Triple Kay" OR "bouyon Asa Bantan" OR "bouyon Ridge" OR "bouyon Reo" OR "bouyon Signal Band" OR "bouyon WCK" OR "bouyon Gotta7"',
+    "bouyon": f'"bouyon {current_year}" OR "{current_year} bouyon"',
     "afrobeats": f'"afrobeats {current_year}" OR "{current_year} afrobeats" OR "afrobeats Burna Boy" OR "afrobeats Wizkid" OR "afrobeats Davido" OR "afrobeats Rema" OR "afrobeats Asake" OR "afrobeats Tems" OR "afrobeats Omah Lay" OR "afrobeats Ayra Starr" OR "afrobeats Seyi Vibez" OR "afrobeats Kizz Daniel"'
 }
 
-# Clutter control filters
-INSTRUMENTAL_BLACKLIST = [
-    "type beat", "instrumental", "version", "edit", "riddim loop", 
-    "prod by", "prod.", "free beat", "beat lyric", "karaoke", "clean loop"
-]
-
-CHUTNEY_BLACKLIST = [
-    "chutney", "ravi b", "karma", "raymond ramnarine", "dil-e-nadan", "ki & the band", 
-    "ki and the band", "omardath", "reshma ramlal", "gundilal", "boodram", "drupatee"
-]
-
-# Global keywords to filter out non-music video leaks instantly
-GLOBAL_CLUTTER_BLACKLIST = [
-    "the voice blind audition", "the voice battle", "full movie", "movie clip", "trailer", "season finale"
-]
+# Filters & Blacklists
+INSTRUMENTAL_BLACKLIST = ["type beat", "instrumental", "version", "edit", "riddim loop", "prod by", "prod.", "free beat", "beat lyric", "karaoke", "clean loop"]
+CHUTNEY_BLACKLIST = ["chutney", "ravi b", "karma", "raymond ramnarine", "dil-e-nadan", "ki & the band", "ki and the band", "omardath", "reshma ramlal", "gundilal", "boodram", "drupatee"]
+GLOBAL_CLUTTER_BLACKLIST = ["the voice blind audition", "the voice battle", "full movie", "movie clip", "trailer", "season finale"]
 
 def get_duration_seconds(duration_str):
     match = re.match(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', duration_str)
-    if not match:
-        return 0
+    if not match: return 0
     hours = int(match.group(1)) if match.group(1) else 0
     minutes = int(match.group(2)) if match.group(2) else 0
     seconds = int(match.group(3)) if match.group(3) else 0
     return (hours * 3600) + (minutes * 60) + seconds
 
-# 3. Connect to Google Sheets by Key ID
+# 3. Connection Setup
 try:
-    scopes = [
-        "https://www.googleapis.com/auth/spreadsheets",
-        "https://www.googleapis.com/auth/drive"
-    ]
+    scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
     creds_dict = json.loads(GOOGLE_CREDS_JSON)
     creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
     gc = gspread.authorize(creds)
     sheet = gc.open_by_key(SPREADSHEET_ID)
-    print(f"Connected successfully to Google Sheet ID: {SPREADSHEET_ID}")
 except Exception as e:
-    print(f"Google Sheets connection failed: {e}")
+    print(f"Connection error: {e}")
     exit(1)
 
-# 4. Load View History for Velocity Calculation
-try:
-    if os.path.exists("data.json"):
-        with open("data.json", "r", encoding="utf-8") as f:
-            old_data = json.load(f)
-            if "charts" in old_data:
-                for existing_genre in old_data["charts"]:
-                    for track in old_data["charts"][existing_genre]:
-                        history[track["id"]] = track["lifetime_views"]
-        is_first_run = False
-except Exception:
-    print("Running as Week 1 Baseline.")
+# 4. History Loading
+if os.path.exists("data.json"):
+    with open("data.json", "r", encoding="utf-8") as f:
+        old_data = json.load(f)
+        if "charts" in old_data:
+            for genre_key in old_data["charts"]:
+                for track in old_data["charts"][genre_key]:
+                    history[track["id"]] = track["lifetime_views"]
+            is_first_run = False
 
 final_charts = {}
 all_tracks_master = []
 master_track_fingerprints = set()
 
-# 5. Data Gathering Processing Loops
+# 5. Data Gathering
 for genre in genres:
-    print(f"Gathering metrics for {genre.upper()} using strict context boundaries...")
     genre_tracks = []
     video_ids = []
     video_snippets = {}
     genre_claimed_ids = set()
     
-    final_charts[genre] = []
-    
-    base_query = GENRE_QUERIES.get(genre, f"{genre} {current_year}")
+    base_query = GENRE_QUERIES.get(genre)
     search_query = f"{base_query} -mix -mixtape -compilation -dj"
     next_page_token = None
     
+    # Perform Search
     for page in range(4):
-        search_query_params = {
-            "part": "snippet", "q": search_query, "type": "video",
-            "order": "viewCount", "publishedAfter": published_after,
-            "maxResults": 50, "key": API_KEY
-        }
-        if next_page_token:
-            search_query_params["pageToken"] = next_page_token
-            
-        search_params = urllib.parse.urlencode(search_query_params)
-        search_url = f"https://www.googleapis.com/youtube/v3/search?{search_params}"
-        
-        try:
-            with urllib.request.urlopen(search_url) as response:
-                search_data = json.loads(response.read().decode())
-                
-                for item in search_data.get("items", []):
-                    vid = item["id"]["videoId"]
-                    video_ids.append(vid)
-                    video_snippets[vid] = {
-                        "id": vid,
-                        "title": item["snippet"]["title"],
-                        "channel": item["snippet"]["channelTitle"],
-                        "genre": genre,
-                        "url": f"https://www.youtube.com/watch?v={vid}",
-                        "thumbnail": item["snippet"]["thumbnails"]["high"]["url"]
-                    }
-                
-                next_page_token = search_data.get("nextPageToken")
-                if not next_page_token:
-                    break
-        except Exception as e:
-            print(f"Search API exception during {genre.upper()}: {e}")
-            break
-
-    if not video_ids:
-        continue
-
-    chunk_size = 50
-    chunks = [video_ids[i:i + chunk_size] for i in range(0, len(video_ids), chunk_size)]
-
-    for chunk in chunks:
-        stats_params = urllib.parse.urlencode({
-            "part": "statistics,contentDetails", "id": ",".join(chunk), "key": API_KEY
+        params = urllib.parse.urlencode({
+            "part": "snippet", "q": search_query, "type": "video", "order": "viewCount", 
+            "publishedAfter": published_after, "maxResults": 50, "key": API_KEY, "pageToken": next_page_token or ""
         })
-        stats_url = f"https://www.googleapis.com/youtube/v3/videos?{stats_params}"
-        
-        try:
-            with urllib.request.urlopen(stats_url) as stats_response:
-                stats_data = json.loads(stats_response.read().decode())
+        with urllib.request.urlopen(f"https://www.googleapis.com/youtube/v3/search?{params}") as response:
+            search_data = json.loads(response.read().decode())
+            for item in search_data.get("items", []):
+                vid = item["id"]["videoId"]
+                video_ids.append(vid)
+                video_snippets[vid] = {"id": vid, "title": item["snippet"]["title"], "channel": item["snippet"]["channelTitle"], "genre": genre, "url": f"https://www.youtube.com/watch?v={vid}", "thumbnail": item["snippet"]["thumbnails"]["high"]["url"]}
+            next_page_token = search_data.get("nextPageToken")
+            if not next_page_token: break
+
+    # Process Stats
+    chunk_size = 50
+    for i in range(0, len(video_ids), chunk_size):
+        chunk = video_ids[i:i+chunk_size]
+        stats_params = urllib.parse.urlencode({"part": "statistics,contentDetails", "id": ",".join(chunk), "key": API_KEY})
+        with urllib.request.urlopen(f"https://www.googleapis.com/youtube/v3/videos?{stats_params}") as resp:
+            stats_data = json.loads(resp.read().decode())
+            for item in stats_data.get("items", []):
+                vid = item["id"]
+                track = video_snippets[vid]
+                t_lower = track["title"].lower()
+                c_lower = track["channel"].lower()
                 
-                for item in stats_data.get("items", []):
-                    vid = item["id"]
-                    track = video_snippets[vid]
-                    title_lower = track["title"].lower()
-                    channel_lower = track["channel"].lower()
-                    
-                    if vid in genre_claimed_ids:
-                        continue
+                if any(c in t_lower for c in GLOBAL_CLUTTER_BLACKLIST): continue
+                if genre != "bouyon":
+                    if any(b in t_lower or b in c_lower for b in INSTRUMENTAL_BLACKLIST): continue
+                elif "type beat" in t_lower or "free beat" in t_lower: continue
+                if "reggae" in t_lower or any(cb in t_lower or cb in c_lower for cb in CHUTNEY_BLACKLIST): continue
+                
+                dur = get_duration_seconds(item["contentDetails"].get("duration", ""))
+                if dur < 90 or dur > 300: continue
+                
+                curr_views = int(item["statistics"].get("viewCount", 0))
+                track["weekly_views"] = curr_views if is_first_run else max(0, curr_views - history.get(vid, 0))
+                genre_tracks.append(track)
 
-                    # Hard filter non-music video clutter leaks
-                    if any(clutter_word in title_lower for clutter_word in GLOBAL_CLUTTER_BLACKLIST):
-                        continue
-
-                    # Dynamic Instrumental Shield
-                    if genre != "bouyon":
-                        if any(bad_word in title_lower or bad_word in channel_lower for bad_word in INSTRUMENTAL_BLACKLIST):
-                            continue
-                    else:
-                        if "type beat" in title_lower or "free beat" in title_lower:
-                            continue
-
-                    if "reggae" in title_lower or "reggae" in channel_lower:
-                        continue
-
-                    # Hard Chutney Elimination
-                    if any(chutney_bot in title_lower or chutney_bot in channel_lower for chutney_bot in CHUTNEY_BLACKLIST):
-                        continue
-
-                    # Cross-tab leaking protection
-                    if genre == "soca" and "dancehall" in title_lower and "soca" not in title_lower:
-                        continue
-                    if genre == "afrobeats" and "dancehall" in title_lower and "afrobeats" not in title_lower:
-                        continue
-                    
-                    duration_raw = item["contentDetails"].get("duration", "")
-                    duration_seconds = get_duration_seconds(duration_raw)
-                    if duration_seconds < 90 or duration_seconds > 300:
-                        continue
-                        
-                    current_views = int(item["statistics"].get("viewCount", 0))
-                    track["lifetime_views"] = current_views
-                    
-                    if is_first_run:
-                        weekly_views = current_views
-                    else:
-                        weekly_views = max(0, current_views - history.get(vid, 0))
-                        
-                    track["weekly_views"] = weekly_views
-                    genre_tracks.append(track)
-                    genre_claimed_ids.add(vid)
-                    
-        except Exception as e:
-            print(f"Stats evaluation failure: {e}")
-                    
+    # 6. Update Sheets
     genre_tracks.sort(key=lambda x: x["weekly_views"], reverse=True)
-    top_50_genre = genre_tracks[:50]
-    final_charts[genre] = top_50_genre
-
-    # 6. Push Synchronized Tracks to Sheets Tabs
+    top_50 = genre_tracks[:50]
+    final_charts[genre] = top_50
+    
     try:
         worksheet = sheet.worksheet(genre)
         worksheet.batch_clear(["A2:G60"])
-        
-        sheet_rows = []
-        for index, track in enumerate(top_50_genre):
-            sheet_rows.append([
-                index + 1,
-                track["title"],
-                track["channel"],
-                track["weekly_views"],
-                track["id"],
-                track["url"],
-                track["thumbnail"]
-            ])
-            
-        if sheet_rows:
-            worksheet.update("A2", sheet_rows)
-            print(f"Successfully populated {len(sheet_rows)} tracks to spreadsheet tab: '{genre}'")
-    except Exception as sheet_err:
-        print(f"Spreadsheet sync error on tab '{genre}': {sheet_err}")
+        rows = [[i+1, t["title"], t["channel"], t["weekly_views"], t["id"], t["url"], t["thumbnail"]] for i, t in enumerate(top_50)]
+        if rows: worksheet.update("A2", rows)
+    except: pass
 
-# Combine master database backup tracking
-for genre_key in genres:
-    for t in final_charts.get(genre_key, []):
-        if t["id"] not in master_track_fingerprints:
-            all_tracks_master.append(t)
-            master_track_fingerprints.add(t["id"])
-
-all_tracks_master.sort(key=lambda x: x["weekly_views"], reverse=True)
-final_charts["all_genres"] = all_tracks_master[:50]
-
-final_output = {
-    "last_updated": today.strftime('%Y-%m-%d'),
-    "charts": final_charts
-}
-
+# Finalize
 with open("data.json", "w", encoding="utf-8") as f:
-    json.dump(final_output, f, indent=4)
-
-print("Carib25 Database Array and Google Sheet Curation tabs fully updated!")
+    json.dump({"last_updated": today.strftime('%Y-%m-%d'), "charts": final_charts}, f, indent=4)
