@@ -13,6 +13,7 @@ GOOGLE_CREDS_JSON = os.environ.get("GOOGLE_CREDENTIALS")
 SPREADSHEET_ID = os.environ.get("SPREADSHEET_ID")
 CURRENT_YEAR = datetime.utcnow().year
 
+# Explicitly tracking only your three primary genres
 genres = ["soca", "dancehall", "bouyon"]
 history = {}
 is_first_run = True
@@ -43,6 +44,8 @@ if os.path.exists("data.json"):
     with open("data.json", "r") as f:
         data = json.load(f)
         for g in data.get("charts", {}):
+            # Skip old afrobeats keys that might still live in historic data files
+            if g not in genres: continue
             for t in data["charts"][g]: 
                 history[t["id"]] = t.get("lifetime_views", 0)
             is_first_run = False
@@ -53,7 +56,6 @@ master_list = []
 # 3. Processing
 for genre in genres:
     genre_tracks = []
-    # Mixes filtered directly at the API level via the query payload string
     search_query = f"{SEARCH_QUERIES[genre]} -mix -mixtape -compilation -dj"
     params = {"part": "snippet", "q": search_query, "type": "video", "order": "viewCount", "maxResults": 50, "key": API_KEY}
     
