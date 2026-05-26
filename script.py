@@ -25,23 +25,28 @@ genres = ["soca", "dancehall", "bouyon", "afrobeats"]
 history = {}
 is_first_run = True
 
-# 2. Advanced Search Matrix (Optimized Year-Stamps + Exact Artist Roster)
+# 2. Pinpoint Search Matrix (Binding genre to artists to prevent global video leaks)
 GENRE_QUERIES = {
-    "soca": f'"soca {current_year}" OR "{current_year} soca" OR "Machel Montano" OR "Bunji Garlin" OR "Kes" OR "Voice" OR "Patrice Roberts" OR "Nadia Batson" OR "Skinny Fabulous" OR "Lyrikal" OR "Nailah Blackman"',
-    "dancehall": f'"dancehall {current_year}" OR "{current_year} dancehall" OR "Shenseea" OR "Skeng" OR "Ayetian" OR "Valiant" OR "Skillibeng" OR "Vybz Kartel" OR "Mavado" OR "Masicka" OR "Popcaan" OR "Teejay"',
-    "bouyon": f'"bouyon {current_year}" OR "{current_year} bouyon" OR "Triple Kay" OR "Asa Bantan" OR "Ridge" OR "Reo" OR "Signal Band" OR "WCK" OR "Gotta7" OR "Pudaz" OR "Trilla-G"',
-    "afrobeats": f'"afrobeats {current_year}" OR "{current_year} afrobeats" OR "Burna Boy" OR "Wizkid" OR "Davido" OR "Rema" OR "Asake" OR "Tems" OR "Omah Lay" OR "Ayra Starr" OR "Seyi Vibez" OR "Kizz Daniel"'
+    "soca": f'"soca {current_year}" OR "{current_year} soca" OR "soca Machel Montano" OR "soca Bunji Garlin" OR "soca Kes" OR "soca Voice" OR "soca Patrice Roberts" OR "soca Nadia Batson" OR "soca Skinny Fabulous" OR "soca Lyrikal" OR "soca Nailah Blackman"',
+    "dancehall": f'"dancehall {current_year}" OR "{current_year} dancehall" OR "dancehall Shenseea" OR "dancehall Skeng" OR "dancehall Ayetian" OR "dancehall Valiant" OR "dancehall Skillibeng" OR "dancehall Vybz Kartel" OR "dancehall Mavado" OR "dancehall Masicka" OR "dancehall Popcaan" OR "dancehall Teejay"',
+    "bouyon": f'"bouyon {current_year}" OR "{current_year} bouyon" OR "bouyon Triple Kay" OR "bouyon Asa Bantan" OR "bouyon Ridge" OR "bouyon Reo" OR "bouyon Signal Band" OR "bouyon WCK" OR "bouyon Gotta7"',
+    "afrobeats": f'"afrobeats {current_year}" OR "{current_year} afrobeats" OR "afrobeats Burna Boy" OR "afrobeats Wizkid" OR "afrobeats Davido" OR "afrobeats Rema" OR "afrobeats Asake" OR "afrobeats Tems" OR "afrobeats Omah Lay" OR "afrobeats Ayra Starr" OR "afrobeats Seyi Vibez" OR "afrobeats Kizz Daniel"'
 }
 
 # Clutter control filters
 INSTRUMENTAL_BLACKLIST = [
     "type beat", "instrumental", "version", "edit", "riddim loop", 
-    "prod by", "prod.", "free beat", "beat lyric", "karaoke"
+    "prod by", "prod.", "free beat", "beat lyric", "karaoke", "clean loop"
 ]
 
 CHUTNEY_BLACKLIST = [
     "chutney", "ravi b", "karma", "raymond ramnarine", "dil-e-nadan", "ki & the band", 
     "ki and the band", "omardath", "reshma ramlal", "gundilal", "boodram", "drupatee"
+]
+
+# Global keywords to filter out non-music video leaks instantly
+GLOBAL_CLUTTER_BLACKLIST = [
+    "the voice blind audition", "the voice battle", "full movie", "movie clip", "trailer", "season finale"
 ]
 
 def get_duration_seconds(duration_str):
@@ -87,7 +92,7 @@ master_track_fingerprints = set()
 
 # 5. Data Gathering Processing Loops
 for genre in genres:
-    print(f"Gathering metrics for {genre.upper()} using structured indexing parameters...")
+    print(f"Gathering metrics for {genre.upper()} using strict context boundaries...")
     genre_tracks = []
     video_ids = []
     video_snippets = {}
@@ -159,7 +164,11 @@ for genre in genres:
                     if vid in genre_claimed_ids:
                         continue
 
-                    # Dynamic Instrumental Shield (Protects Bouyon, screens out Dancehall/Soca/Afrobeats type beats)
+                    # Hard filter non-music video clutter leaks
+                    if any(clutter_word in title_lower for clutter_word in GLOBAL_CLUTTER_BLACKLIST):
+                        continue
+
+                    # Dynamic Instrumental Shield
                     if genre != "bouyon":
                         if any(bad_word in title_lower or bad_word in channel_lower for bad_word in INSTRUMENTAL_BLACKLIST):
                             continue
