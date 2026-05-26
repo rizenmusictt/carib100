@@ -25,12 +25,12 @@ genres = ["soca", "dancehall", "bouyon", "afrobeats"]
 history = {}
 is_first_run = True
 
-# 2. Pinpoint Search Matrix 
+# 2. Advanced Search Matrix (Pinpoint Precision)
 GENRE_QUERIES = {
     "soca": f'"soca {current_year}" OR "{current_year} soca"',
     "dancehall": f'"dancehall {current_year}" OR "{current_year} dancehall" OR "dancehall Shenseea" OR "dancehall Skeng" OR "dancehall Ayetian" OR "dancehall Valiant" OR "dancehall Skillibeng" OR "dancehall Vybz Kartel" OR "dancehall Mavado" OR "dancehall Masicka" OR "dancehall Popcaan" OR "dancehall Teejay"',
     "bouyon": f'"bouyon {current_year}" OR "{current_year} bouyon"',
-    "afrobeats": f'"afrobeats {current_year}" OR "{current_year} afrobeats" OR "afrobeats Burna Boy" OR "afrobeats Wizkid" OR "afrobeats Davido" OR "afrobeats Rema" OR "afrobeats Asake" OR "afrobeats Tems" OR "afrobeats Omah Lay" OR "afrobeats Ayra Starr" OR "afrobeats Seyi Vibez" OR "afrobeats Kizz Daniel"'
+    "afrobeats": f'"afrobeats {current_year}" OR "{current_year} afrobeats" OR "Burna Boy" OR "Wizkid" OR "Davido" OR "Rema" OR "Asake" OR "Tems" OR "Omah Lay" OR "Ayra Starr" OR "Seyi Vibez" OR "Kizz Daniel"'
 }
 
 # Clutter control filters
@@ -89,7 +89,7 @@ final_charts = {}
 all_tracks_master = []
 master_track_fingerprints = set()
 
-# 5. Data Gathering Processing Loops (With URL Encoding to fix 403 Forbidden)
+# 5. Data Gathering Processing Loops
 for genre in genres:
     print(f"Gathering metrics for {genre.upper()}...")
     genre_tracks = []
@@ -116,7 +116,6 @@ for genre in genres:
         if next_page_token:
             search_query_params["pageToken"] = next_page_token
             
-        # Properly encode parameters to prevent API rejection
         search_params = urllib.parse.urlencode(search_query_params)
         search_url = f"https://www.googleapis.com/youtube/v3/search?{search_params}"
         
@@ -171,15 +170,17 @@ for genre in genres:
                     if vid in genre_claimed_ids:
                         continue
 
-                    # Clutter, instrumental, and crossover filters
+                    # Global non-music filter
                     if any(clutter_word in title_lower for clutter_word in GLOBAL_CLUTTER_BLACKLIST):
                         continue
 
-                    if genre != "bouyon":
+                    # Targeted Instrumental Filters per Genre
+                    if genre in ["soca", "dancehall"]:
                         if any(bad_word in title_lower or bad_word in channel_lower for bad_word in INSTRUMENTAL_BLACKLIST):
                             continue
-                    else:
-                        if "type beat" in title_lower or "free beat" in title_lower:
+                    elif genre in ["bouyon", "afrobeats"]:
+                        # Protects official uploads that contain producer credits, but kills fake beat spam
+                        if "type beat" in title_lower or "free beat" in title_lower or "instrumental" in title_lower:
                             continue
 
                     if "reggae" in title_lower or "reggae" in channel_lower:
@@ -240,7 +241,7 @@ for genre in genres:
     except Exception as sheet_err:
         print(f"Spreadsheet sync error on tab '{genre}': {sheet_err}")
 
-# Combine master database backup tracking (Restored logic for your site's 'All' tab)
+# Combine master database backup tracking
 for genre_key in genres:
     for t in final_charts.get(genre_key, []):
         if t["id"] not in master_track_fingerprints:
@@ -258,4 +259,4 @@ final_output = {
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(final_output, f, indent=4)
 
-print("Database fully updated!")
+print("Database completely synchronized and updated successfully!")
