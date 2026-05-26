@@ -16,7 +16,6 @@ four_months_ago = today - timedelta(days=120)
 published_after = four_months_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
 current_year = today.year
 
-# Streamlined core high-energy genres
 genres = ["soca", "dancehall", "bouyon", "afrobeats"]
 history = {}
 is_first_run = True
@@ -54,10 +53,13 @@ for genre in genres:
     genre_claimed_ids = set()
     
     final_charts[genre] = []
-    search_query = f"{genre} {current_year}"
+    
+    # FIXED: Added negative search terms to ban long-form mixes right at the source
+    search_query = f"{genre} {current_year} -mix -mixtape -compilation -dj"
     next_page_token = None
     
-    for page in range(3):
+    # FIXED: Expanded from 3 to 4 pages to scan 200 deep-tier individual singles per genre
+    for page in range(4):
         search_query_params = {
             "part": "snippet", "q": search_query, "type": "video",
             "order": "viewCount", "publishedAfter": published_after,
@@ -120,14 +122,11 @@ for genre in genres:
                     if any(bad_word in title_lower for bad_word in ["instrumental", "version", "edit"]):
                         continue
                         
-                    # CRITICAL: Complete Chutney and Reggae Filter 
-                    # If it says chutney or reggae anywhere in the title/channel, drop it instantly
                     if "chutney" in title_lower or "chutney" in channel_lower:
                         continue
                     if "reggae" in title_lower or "reggae" in channel_lower:
                         continue
 
-                    # Anti-Bleeding cross filters
                     if genre == "soca" and "dancehall" in title_lower and "soca" not in title_lower:
                         continue
                     if genre == "afrobeats" and "dancehall" in title_lower and "afrobeats" not in title_lower:
@@ -174,4 +173,4 @@ final_output = {
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(final_output, f, indent=4)
 
-print("Carib50 Master Engine Successfully Synced (Chutney & Reggae Removed)!")
+print("Carib50 Core Engine Optimized for High-Velocity Singles!")
