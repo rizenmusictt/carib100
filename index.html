@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carib100 | Top Caribbean Charts</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00ffcc;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            font-size: 0.9.rem;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tab-btn {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .tab-btn.active {
+            background-color: #00ffcc;
+            color: #121212;
+            border-color: #00ffcc;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+        }
+        .tab-btn:hover:not(.active) {
+            border-color: #00ffcc;
+            color: #00ffcc;
+        }
+        .chart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .track {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #2a2a2a;
+            transition: background 0.2s ease;
+        }
+        .track:hover {
+            background: #252525;
+        }
+        .rank {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #888;
+            width: 40px;
+            text-align: center;
+        }
+        .track:nth-child(1) .rank { color: #ffd700; font-size: 1.6rem; } /* Gold for #1 */
+        .track:nth-child(2) .rank { color: #c0c0c0; } /* Silver for #2 */
+        .track:nth-child(3) .rank { color: #cd7f32; } /* Bronze for #3 */
+
+        .thumbnail-container {
+            position: relative;
+            margin: 0 20px;
+        }
+        .thumbnail {
+            width: 110px;
+            height: 62px;
+            border-radius: 6px;
+            object-fit: cover;
+            display: block;
+        }
+        .info {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .title {
+            font-size: 1.05rem;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            line-height: 1.3;
+            color: #fff;
+        }
+        .channel {
+            color: #888;
+            font-size: 0.85rem;
+            margin: 0;
+        }
+        .views-container {
+            text-align: right;
+            min-width: 110px;
+        }
+        .views {
+            color: #00ffcc;
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+        .views-label {
+            font-size: 0.7rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Carib100</h1>
+    <p class="subtitle" id="update-date">Loading chart engine...</p>
+
+    <div class="tabs" id="tabs-container">
+        <button class="tab-btn active" onclick="switchTab('all_genres', this)">All Genres</button>
+        <button class="tab-btn" onclick="switchTab('soca', this)">Soca</button>
+        <button class="tab-btn" onclick="switchTab('dancehall', this)">Dancehall</button>
+        <button class="tab-btn" onclick="switchTab('reggae', this)">Reggae</button>
+        <button class="tab-btn" onclick="switchTab('bouyon', this)">Bouyon</button>
+        <button class="tab-btn" onclick="switchTab('afrobeats', this)">Afrobeats</button>
+    </div>
+
+    <div class="chart-container" id="chart-list">
+        <!-- Tracks will inject dynamically here -->
+    </div>
+
+    <script>
+        let cachedCharts = {};
+
+        // Fetch data from data.json
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                cachedCharts = data.charts;
+                
+                // Format and present update timestamp
+                if (data.last_updated) {
+                    document.getElementById('update-date').innerText = "WEEKLY VELOCITY CHART • UPDATED: " + data.last_updated;
+                }
+                
+                // Load default baseline tab (All Genres combined)
+                renderChart('all_genres');
+            })
+            .catch(error => {
+                console.error("Error reading data.json:", error);
+                document.getElementById('chart-list').innerHTML = `
+                    <div style="padding: 40px; text-align: center; color: #ff5555;">
+                        <h3>Chart data file not found.</h3>
+                        <p>Make sure your GitHub Action has run successfully at least once to build data.json.</p>
+                    </div>
+                `;
+            });
+
+        function switchTab(genreKey, buttonElement) {
+            // Manage active button layout states
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            buttonElement.classList.add('active');
+            
+            // Build the specific chart view
+            renderChart(genreKey);
+        }
+
+        function renderChart(genreKey) {
+            const container = document.getElementById('chart-list');
+            container.innerHTML = ''; // Clean old tracks
+
+            const tracks = cachedCharts[genreKey];
+
+            if (!tracks || tracks.length === 0) {
+                container.innerHTML = `<div style="padding: 40px; text-align: center; color: #888;">No tracks detected in this category yet.</div>`;
+                return;
+            }
+
+            tracks.forEach((track, index) => {
+                const item = document.createElement('div');
+                item.className = 'track';
+
+                // Format count nicely (e.g., 1,500,000)
+                const formattedViews = track.weekly_views.toLocaleString();
+
+                item.innerHTML = `
+                    <div class="rank">${index + 1}</div>
+                    <div class="thumbnail-container">
+                        <a href="${track.url}" target="_blank">
+                            <img class="thumbnail" src="${track.thumbnail}" alt="Video thumbnail">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <a href="${track.url}" target="_blank">
+                            <p class="title">${track.title}</p>
+                        </a>
+                        <p class="channel">${track.channel}</p>
+                    </div>
+                    <div class="views-container">
+                        <p class="views">+${formattedViews}</p>
+                        <p class="views-label">weekly plays</p>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+    </script>
+
+</body>
+</html>
