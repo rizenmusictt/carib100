@@ -22,11 +22,11 @@ today = datetime.utcnow()
 four_months_ago = today - timedelta(days=120)  
 published_after = four_months_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
 
-# Restored Bouyon artists using a flat OR structure (No parentheses)
+# Fixed Bouyon query to prevent "Ridge" from pulling random non-music videos
 SEARCH_QUERIES = {
     "soca": f"{CURRENT_YEAR} soca",
     "dancehall": f"{CURRENT_YEAR} dancehall",
-    "bouyon": f'bouyon {CURRENT_YEAR} OR "Asa Bantan" OR "Triple Kay" OR "Ridge" OR "Signal Band"'
+    "bouyon": f'"{CURRENT_YEAR} bouyon" OR "Asa Bantan" OR "Triple Kay" OR "Ridge bouyon" OR "Signal Band"'
 }
 
 # Watertight Content Filtering
@@ -71,7 +71,7 @@ for genre in genres:
         
     next_page_token = None
     pages_fetched = 0
-    MAX_PAGES = 10 # Checks up to 500 tracks per genre
+    MAX_PAGES = 15 # Checks up to 750 tracks per genre to ensure we hit the 50 cap
     
     while len(genre_tracks) < 50 and pages_fetched < MAX_PAGES:
         params = {
@@ -118,8 +118,8 @@ for genre in genres:
                 
             dur = get_seconds(item["contentDetails"].get("duration", ""))
             
-            # Strict format filter (1 to 5 mins)
-            if dur < 60 or dur > 300: 
+            # Expanded format filter: 1 to 7 mins (Allows music videos with long intros/skits)
+            if dur < 60 or dur > 420: 
                 continue
             
             t = next((x for x in res["items"] if x["id"]["videoId"] == item["id"]), None)
@@ -141,7 +141,10 @@ for genre in genres:
                 if "type beat" in title_lower or "free beat" in title_lower: continue
 
             views = int(item["statistics"].get("viewCount", 0))
-            if views < 5000: continue
+            
+            # Custom view thresholds based on genre market size
+            min_views = 2500 if genre == "bouyon" else 5000
+            if views < min_views: continue
             
             track = {
                 "id": item["id"], 
